@@ -9,12 +9,12 @@ from modules.handler import stream_handler, format_search_result
 from modules.tools import WebSearchTool
 
 # API KEY 정보로드
-load_dotenv()
+load_dotenv(override=True)
 
 # 프로젝트 이름
 logging.langsmith("Perplexity")
 
-st.title("Perplexity 💬")
+st.title("퍼플렉시티 💬")
 st.markdown(
     "LLM에 **웹검색 기능** 을 추가한 [Perplexity](https://www.perplexity.ai/) 클론 입니다. _멀티턴_ 대화를 지원합니다."
 )
